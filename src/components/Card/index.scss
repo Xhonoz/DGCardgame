@@ -77,4 +77,12 @@
       color: #d4af37;
     }
   }
+
+  &.type-support {
+    border: 4px solid #00ad0c;
+
+    .card-title {
+      color: #00ad0c;
+    }
+  }
 }

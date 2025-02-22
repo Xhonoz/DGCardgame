@@ -20,6 +20,7 @@ interface SwipeGalleryProps {
 }
 
 export const SwipeGallery = ({ deck }: SwipeGalleryProps) => {
+  console.log(deck.length);
   const [cards, setCards] = useState<card[]>([]);
 
   const [activeIndex, setActiveIndex] = useState(-1);
