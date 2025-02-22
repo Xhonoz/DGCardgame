@@ -67,10 +67,10 @@ $galleryHeight: calc(100vh - 160px);
     box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  // &:hover {
-  //   background-color: #45a049; // Darker green on hover
-  //   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  // }
+  &:hover {
+    background-color: #45a049; // Darker green on hover
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
 
   &:active {
     background-color: #3d8b40; // Even darker green when pressed
@@ -100,13 +100,46 @@ $galleryHeight: calc(100vh - 160px);
     box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  // &:hover {
-  //   background-color: #091df2; // Darker green on hover
-  //   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  // }
+  &:hover {
+    background-color: #091df2; // Darker green on hover
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
 
   &:active {
     background-color: #091df2; // Even darker green when pressed
+    transform: scale(0.95); // Slightly shrink the button when clicked
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    outline: none; // Remove default focus outline
+    box-shadow: 0 0 0 3px rgba(72, 207, 173, 0.5); // Add a custom focus ring
+  }
+}
+
+.undoButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #dbdbdb; // Green background for a "play" action
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #dbdbdb; // Darker green on hover
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    background-color: #dbdbdb; // Even darker green when pressed
     transform: scale(0.95); // Slightly shrink the button when clicked
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
